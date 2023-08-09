@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImageGallery</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="ImgGallery.css">
+</head>
+
+<body>
+    <div class="container ">
+        <div class="container-fluid">
+        <div class="row ">
+            <div class="col mx-5 ">
+                <button type="button" class="col btn filter-btn" data-filter="all">All</button>
+                <button type="button" class="col btn filter-btn" data-filter="camera">Camera</button>
+                <button type="button" class="col btn filter-btn" data-filter="watches">Watches</button>
+                <button type="button" class="col btn filter-btn" data-filter="shoes">Shoes</button>
+                <button type="button" class="col btn filter-btn" data-filter="tripods">Tripods</button>
+
+            </div>
+
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4  m-4" id="product-container">
+            <div class="col items "data-category="shoes">
+                <div class="card " >
+                    <img src="https://img.freepik.com/free-photo/pair-trainers_144627-3800.jpg" class="card-img"
+                        alt="...">
+                </div>
+            </div>
+            <div class="col items"data-category="watches">
+                <div class="card ">
+                    <img src="https://freshsparks.com/wp-content/uploads/2014/10/project_image_icon_TIS.jpg"
+                        class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="col items"data-category="shoes">
+                <div class="card " >
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2021/9/RG/QY/JJ/20506059/e-commerce-shoes-photography-500x500.JPG"
+                        class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="col items"data-category="watches">
+                <div class="card " >
+                    <img src="https://5.imimg.com/data5/SELLER/Default/2022/11/KA/JJ/XK/20506059/e-commerce-watches-photography-500x500.JPG"
+                        class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="col items"data-category="camera">
+                <div class="card " >
+                    <img src="https://m.media-amazon.com/images/I/710oqacMOyL.jpg" class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="col items"data-category="camera">
+                <div class="card ">
+                    <img src="https://fast.littlebird.com.au/prod/photo/13930/original/SF-SEN-16761-1.webp"
+                        class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="col items"data-category="tripods">
+                <div class="card " >
+                    <img src="https://m.media-amazon.com/images/I/61HVbBnjYGL.jpg" class="card-img" alt="...">
+                </div>
+            </div>
+            <div class="col items"data-category="camera">
+                <div class="card ">
+                    <img src="https://www.shutterbug.com/images/styles/600_wide/public/1-sony_a6500_slant.jpg"
+                        class="card-img" alt="...">
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popimage">
+            <div class="cardq">
+            <span class="close">&times;</span>
+            <img class="image-content" id="Image">
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="ImgGallery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
